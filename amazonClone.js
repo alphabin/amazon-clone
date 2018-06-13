@@ -101,7 +101,7 @@ function selectItem() {
                         function (error) {
                             if (error) throw err;
                             console.log("\nBid placed successfully!");
-                            console.log("\n\t\tYour total Cost == [$"+ (buyNum * cost).toFixed(2)+"]");
+                            console.log("\n\tYour total Cost == [$"+ (buyNum * cost).toFixed(2)+"]");
                             selectItem();
                         }
                     );
