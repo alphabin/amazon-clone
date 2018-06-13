@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     user: "root",
 
     // Your password
-    password: "",
+    password: "Kaya@1234",
     database: "bamazon"
 });
 
@@ -59,7 +59,7 @@ function selectItem() {
                         }
                         return choiceArray;
                     },
-                    message: "\nWhat item would you like to buy?\n  ID:ItemName:Price:Quantity"
+                    message: "\nWhat item would you like to buy?\n  ID:ItemName:Price:Quantity\n "
                 },
                 {
                     name: "amount",
@@ -101,7 +101,7 @@ function selectItem() {
                         function (error) {
                             if (error) throw err;
                             console.log("\nBid placed successfully!");
-                            console.log("\n\t\tYour total Cost == ["+ (buyNum * cost).toFixed(2)+"]");
+                            console.log("\n\t\tYour total Cost == [$"+ (buyNum * cost).toFixed(2)+"]");
                             selectItem();
                         }
                     );
